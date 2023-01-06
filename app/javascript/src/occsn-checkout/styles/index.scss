@@ -1,0 +1,120 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.bpk-input {
+  height: initial;
+  @apply form-input py-3 px-4 block w-full transition ease-in-out duration-150 rounded-md shadow-sm;
+}
+
+.form-control-square {
+  height: 52px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-clip: padding-box;
+  opacity: 1 !important;
+  @apply block w-full transition ease-in-out duration-150 mt-1 rounded-md shadow-sm;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  border-color: #d2d6dc;
+  border-width: 1px;
+}
+
+.form-control-square::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.form-control-square:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+hr {
+  @apply text-gray-100;
+}
+
+// Book order page
+#bookOrder {
+  &.cursor-not-allowed {
+    pointer-events: none;
+    span {
+      color: #161e2e;
+    }
+    border: 1px solid #161e2e;
+  }
+  &.bg-blue-600 {
+    border: 1px solid #4083f8;
+    span {
+      color: #4083f8;
+    }
+  }
+}
+.spin-button-minus,
+.spin-button-plus {
+  border-color: #d2d6dc;
+  color: #161e2e;
+  font-size: 25px;
+}
+.spin-button-plus {
+  border-left: none;
+  font-size: 20px;
+}
+
+.add-on {
+  width: 100%;
+  &.preview-with-img {
+    width: calc(100% - 80px);
+  }
+}
+
+.modal {
+  max-width: 350px;
+  width: calc(100% - 40px);
+  margin: 0px auto;
+  background: #fff;
+  // width: 500px;
+  height: auto;
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -moz-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  line-height: 25px;
+  z-index: 99;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .close-modal {
+    padding: 0 10px;
+    margin: 5px 0;
+    border: 2px solid;
+  }
+}
+
+.text-violet-500 {
+  color: #8b5cf6;
+  font-weight: 500;
+}
+
+.surveyButton {
+  background-color: #2590eb;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.surveyButton:hover {
+  background-color: #3482f6;
+}
